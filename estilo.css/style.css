@@ -1,0 +1,68 @@
+/*inicio io de mi style de index principal*/
+*{
+  margin: 0;
+  padding: 0;
+}
+.general{
+  font: normal 8mm serif;
+  color: black;
+  background: url(../picture/purple_marble.png) fixed;
+}
+.general h1{
+  background: radial-gradient(circle,blue,gray,white,brown);
+  text-align: center;
+ transition: all 2s;
+}
+.general h1:hover{
+  width: 200px;height: 300px;
+  background-color: black;
+}
+.cursiva{
+  font:bold 8mm serif;
+}
+.crece{
+  background: yellow;
+  border: 2px solid blue;
+  box-shadow: 5px 5px 5px;
+  margin: 5;
+}
+
+/*fin de style de index principal*/
+/*inicio de style de pagina galeria*/
+.contenedor{
+  background: radial-gradient(ellipse, aqua,blue,red,black);
+}
+.contenedor h1{
+  background-image: linear-gradient(to left, red,green,yellow);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  animation-duration: 2s;
+  animation-name:opaco;
+  animation-iteration-count: infinite;
+}
+@keyframes opaco{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.rotate:hover{
+  transform: rotate(30deg);
+  margin: 20px;
+}
+.escale:hover{
+transform: scale(1.1,1.1);
+margin: 20px;
+}
+.translate:hover{
+  transform: translate(20px,30px);
+  margin: 20px;
+}
+.skew:hover{
+  transform: skew(20deg);
+}
